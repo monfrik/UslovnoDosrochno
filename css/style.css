@@ -1,0 +1,57 @@
+html{
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+a[href]{
+    display: block;
+    text-decoration: none;
+}
+body{
+    background-color: #111111;
+    min-height: 100%;
+}
+svg{
+    fill: white;
+}
+object{
+    pointer-events: none;
+}
+header{
+    padding: 0 10px;
+    width: 10vw;
+    float: left;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(131, 131, 131);
+    color: white;
+}
+header dl{
+    padding: 0 5%;
+}
+header dt{
+    padding-top: 50px;
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+header dd{
+    margin: auto;
+    font-size: 1.2rem;
+    padding: 20px 0px 10px 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgb(161, 161, 161);
+    transition: .3s;
+    width: 70%;
+}
+header a{
+    color: white;
+    font-family: sans-serif;
+}
+header dd:hover{
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    transform: scale(1.1);
+}

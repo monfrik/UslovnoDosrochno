@@ -1,0 +1,80 @@
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+section{
+    margin: auto;
+    color: white;
+    transform: scale(3);
+}
+section > h2{
+    text-align: center;
+    font-size: 2rem;
+}
+section > div{
+    margin-top: 10px;
+    border: 7px solid white;
+    width: 300px;
+    height: 150px;
+    background: url(../img/rooms2.png);
+    background-size: contain;
+    position: relative;
+}
+button{
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 200;
+}
+button.active{
+    display: block;
+}
+section a{
+    position: absolute;
+    color: white;
+    font-size: 0.8rem;
+}
+section .rooms > a:nth-child(1){
+    top: 31px;
+    left: 30px;
+}
+section .rooms > a:nth-child(2){
+    top: 31px;
+    right: 25px;
+}
+section .rooms > a:nth-child(3){
+    bottom: 20px;
+    left: 12px;
+}
+section .rooms > a:nth-child(4){
+    bottom: 8px;
+    left: 79px;
+}
+section .room > a{
+    display: block;
+    width: 0px;
+    height: 0px;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 100;
+}
+section .room > a.active{
+    width: 100%;
+    height: 100%;
+}
+section .room > a:nth-child(1){
+    /* background: url(../img/livingroom.png);
+    background-size: contain; */
+}
+section .room > a:nth-child(2){
+    background: url(../img/bedroom.png);
+    background-size: contain;
+}
+section .room > a:nth-child(3){}
+section .room > a:nth-child(4){
+    background: url(../img/bathroom.png);
+    background-size: contain;
+}
